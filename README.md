@@ -10,3 +10,6 @@ conditional statements
 ternary operator
 exception handling with try and catch
 two-dimensional array
+
+![Screenshot](https://github.com/Dbof/PicPuzzle/blob/master/screenshot/screen_picpuzzle2.png)
+![Screenshot](https://github.com/Dbof/PicPuzzle/blob/master/screenshot/screen_picpuzzle.png)
