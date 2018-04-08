@@ -61,7 +61,7 @@ public final class PicPuzzle4 extends Panel implements MouseListener{
             //String input = reader.readLine();
             
             //if ("u".equals(input))
-                pic = ImageIO.read(new URL("https://github.com/SahilQaiser/PicPuzzle/raw/master/images/main4.jpg"));
+                pic = ImageIO.read(new URL("https://github.com/SahilQaiser/PicPuzzle/raw/master/src/picpuzzle4/images/main4.jpg"));
                 imageNum = 1;
             //else if ("f".equals(input))
                 //pic = ImageIO.read(new File("images\\main4.jpg"));
@@ -136,11 +136,11 @@ public final class PicPuzzle4 extends Panel implements MouseListener{
     {
         try{
             if(imageNum==1){
-            pic = ImageIO.read(new URL("https://github.com/SahilQaiser/PicPuzzle/raw/master/images/main3.jpg"));
+            pic = ImageIO.read(new URL("https://github.com/SahilQaiser/PicPuzzle/raw/master/src/picpuzzle4/images/main3.jpg"));
             imageNum = 2;
             }
             else {
-               pic = ImageIO.read(new URL("https://github.com/SahilQaiser/PicPuzzle/raw/master/images/main4.jpg"));
+               pic = ImageIO.read(new URL("https://github.com/SahilQaiser/PicPuzzle/raw/master/src/picpuzzle4/images/main4.jpg"));
                imageNum = 1;
             }
         } catch (IOException io)
