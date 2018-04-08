@@ -5,6 +5,7 @@
  */
 package picpuzzle4;
 //package Game;
+import com.sun.javafx.scene.control.skin.Utils;
 import javax.swing.*;               // GUI
 import java.awt.*;                  // GUI
 import java.awt.event.*;            // Events like ActionListener
@@ -61,10 +62,14 @@ public final class PicPuzzle4 extends Panel implements MouseListener{
             //String input = reader.readLine();
             
             //if ("u".equals(input))
-                pic = ImageIO.read(new URL("https://github.com/SahilQaiser/PicPuzzle/raw/master/src/picpuzzle4/images/main4.jpg"));
-                imageNum = 1;
+                //pic = ImageIO.read(new URL("https://github.com/SahilQaiser/PicPuzzle/raw/master/images/main4.jpg"));
+                
             //else if ("f".equals(input))
-                //pic = ImageIO.read(new File("images\\main4.jpg"));
+            //InputStream stream = this.getClass().getClassLoader().getResourceAsStream("/picpuzzle4/images/main4.jpg");
+            //pic = ImageIO.read(getClass().getResource(stream.toString()));
+            pic = ImageIO.read(getClass().getResource("/picpuzzle4/images/main4.jpg"));
+            imageNum = 1;
+            //pic = ImageIO.read(new File("images\\main4.jpg"));
             //else
                 //System.exit(-1);
         } 
@@ -136,11 +141,13 @@ public final class PicPuzzle4 extends Panel implements MouseListener{
     {
         try{
             if(imageNum==1){
-            pic = ImageIO.read(new URL("https://github.com/SahilQaiser/PicPuzzle/raw/master/src/picpuzzle4/images/main3.jpg"));
+            //pic = ImageIO.read(new URL("https://github.com/SahilQaiser/PicPuzzle/raw/master/images/main3.jpg"));
+            pic = ImageIO.read(getClass().getResource("/picpuzzle4/images/main3.jpg"));
             imageNum = 2;
             }
             else {
-               pic = ImageIO.read(new URL("https://github.com/SahilQaiser/PicPuzzle/raw/master/src/picpuzzle4/images/main4.jpg"));
+                pic = ImageIO.read(getClass().getResource("/picpuzzle4/images/main4.jpg"));
+               //pic = ImageIO.read(new URL("https://github.com/SahilQaiser/PicPuzzle/raw/master/images/main4.jpg"));
                imageNum = 1;
             }
         } catch (IOException io)
